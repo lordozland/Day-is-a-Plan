@@ -31,14 +31,22 @@ h1 {
   border-radius: 20px;
 }
 
-.WTIIRN {
+#WTIIRN {
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   margin-top: 2px;
   margin-bottom: 2px;
   border-radius: 20px;
 }
 
+#texting {
+  padding-top: 17px;
+}
+
+#butz {
+  padding-top: 17px;
+}
+
 #tim {
-  padding-top: 10px;
+  padding-top: 30px;
 }
