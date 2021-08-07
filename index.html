@@ -36,17 +36,21 @@
         <div>9 am</div>
       </div>
       <div class="col s7 m7 l7 center" id="texting">
-        
-        <input type="text" id="noteary" value="notegive">
+        <form>
+          <input type="text" id="noteary" value="notegive">
+        </form>
         <ul id="lulz">
           <li></li>
         </ul>
       </div>
       <div class="col s2 m2 l2 center" id="butz">
-        <a class="waves-effect waves-light btn" type="submit" value="Submit" onclick="savenote()">Save Note</a>
+        <a class="waves-effect waves-light btn" id="Submit" onclick="savenote()">Save Note</a>
       </div>
     </div>
   </div>
+
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.js" integrity="sha512-STI3jX2gEOm2Z4JLWBX1XqsXzHLXmK9H+c94IBv3AfM/w2w3zQfP05EZ/Zi4P/uBajPi2SAmdFxQ1UWQtt7gsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -68,7 +72,7 @@
     // Functions //
 
     function savenote() {
-      var notez = document.getElementById("notegive");
+      var notez = document.getElementById("noteary").value;
       var lulz = document.getElementById("lulz");
       var y = document.getElementById('catches');
       var x = document.createElement("ILLZ");
