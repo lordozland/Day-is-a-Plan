@@ -8,3 +8,5 @@ document.getElementById("lulz").appendChild(node);     // Append <li> to <ul> wi
 var lulz = document.getElementById("lulz")
 var notegive = document.getElementById("notegive")
 
+
+
