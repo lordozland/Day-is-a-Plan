@@ -379,12 +379,14 @@
 
     function aimz9 () {
       var now9 = moment().format('LT');
-      var formOf9 = moment(["10"]);
+      var formOf9 = moment(["10AM"]);
 
       if (now9 - formOf9 > 0) {
-        document.getElementById('off9').style.backgroundColor = "#c2185b pink darken-2"
+        // document.getElementById('off9').style.backgroundColor = "#c2185b pink darken-2"
+        console.log("frog")
       } else {
-        document.getElementById('off9').style.backgroundColor = "#90caf9 blue lighten-3"
+        // document.getElementById('off9').style.backgroundColor = "#90caf9 blue lighten-3"
+        console.log("duck")
       }
 
       console.log(now9)
