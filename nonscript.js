@@ -8,5 +8,10 @@ document.getElementById("lulz").appendChild(node);     // Append <li> to <ul> wi
 var lulz = document.getElementById("lulz")
 var notegive = document.getElementById("notegive")
 
+// https://www.w3schools.com/jsref/prop_win_localstorage.asp
 
+// Store
+localStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 
