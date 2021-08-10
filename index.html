@@ -239,7 +239,7 @@
   <script>
 
     // Open Time //
-    document.getElementById("WTIIRN").innerHTML = moment().format('LT');
+    document.getElementById("WTIIRN").innerHTML = moment().format('LLLL');
     
     // Vars //
     // var notegive = document.getElementById("notegive");
@@ -256,6 +256,12 @@
       nulz9.innerHTML = moment().format('LTS'); 
 
       console.log(notez9);
+
+      localStorage.setItem("noteary9ls", notez9);
+      const notez9ls = localStorage.getItem('noteary9ls');
+
+      console.log(notez9ls)
+
     }
 
     function savenote10() {
@@ -351,9 +357,6 @@
     //  Local Storage Area
 
 
-    localStorage.setItem("noteary9ls", notez9);
-    
-    console.log(noteary9ls)
     
   </script>
 
