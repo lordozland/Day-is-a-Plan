@@ -45,3 +45,9 @@ h1 {
 #tim1, #tim2, #tim3, #tim4, #tim5, #tim9, #tim10, #tim11, #tim12 {
   padding-top: 30px;
 }
+
+
+.btn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}

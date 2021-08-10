@@ -16,7 +16,7 @@
 <!-- Head -->
 
   <div class="container">
-    <div class="curtim row blue lighten-3">
+    <div class="curtim row blue lighten-3 z-depth-5">
       <div class="col s12 m12 l12 center">
         <h1 class="#90caf9 blue lighten-3">Day is the Plan!</h1>
       </div>
@@ -30,7 +30,7 @@
 
   <!-- 9 AM -->
 
-  <div class="container #90caf9 blue lighten-3">
+  <div class="container #90caf9 blue lighten-3 z-depth-5">
     <div class="row">
       <div class="col s3 m3 l3 center" id="tim9">
         <div>9 am</div>
@@ -52,7 +52,7 @@
 
     <!-- 10 AM -->
 
-    <div class="container #90caf9 blue lighten-3">
+    <div class="container #90caf9 blue lighten-3 z-depth-5">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim10">
           <div>10 am</div>
@@ -74,7 +74,7 @@
 
     <!-- 11 AM -->
 
-    <div class="container #90caf9 blue lighten-3">
+    <div class="container #90caf9 blue lighten-3 z-depth-5">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim11">
           <div>11 am</div>
@@ -97,7 +97,7 @@
 
     <!-- 12 PM -->
 
-    <div class="container #90caf9 blue lighten-3">
+    <div class="container #90caf9 blue lighten-3 z-depth-5">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim12">
           <div>12 pm</div>
@@ -119,7 +119,7 @@
 
     <!-- 1 PM -->
 
-    <div class="container #90caf9 blue lighten-3">
+    <div class="container #90caf9 blue lighten-3 z-depth-5">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim1">
           <div>1 pm</div>
@@ -141,7 +141,7 @@
 
     <!-- 2 PM -->
 
-    <div class="container #90caf9 blue lighten-3">
+    <div class="container #90caf9 blue lighten-3 z-depth-5">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim2">
           <div>2 pm</div>
@@ -163,7 +163,7 @@
 
     <!-- 3 PM -->
 
-    <div class="container #90caf9 blue lighten-3">
+    <div class="container #90caf9 blue lighten-3 z-depth-5">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim3">
           <div>3 pm</div>
@@ -185,7 +185,7 @@
 
         <!-- 4 PM -->
 
-        <div class="container #90caf9 blue lighten-3">
+        <div class="container #90caf9 blue lighten-3 z-depth-5">
           <div class="row">
             <div class="col s3 m3 l3 center" id="tim4">
               <div>4 pm</div>
@@ -208,7 +208,7 @@
 
         <!-- 5 PM -->
 
-        <div class="container #90caf9 blue lighten-3">
+        <div class="container #90caf9 blue lighten-3 z-depth-5">
           <div class="row">
             <div class="col s3 m3 l3 center" id="tim5">
               <div>5 pm</div>
@@ -252,7 +252,7 @@
       var lulz9 = document.getElementById("lulz9");
       var nulz9 = document.getElementById("nulz9");
 
-      lulz9.innerHTML = notez9
+      lulz9.innerHTML = localStorage.getItem('noteary9ls')
       nulz9.innerHTML = moment().format('LTS'); 
 
       console.log(notez9);
