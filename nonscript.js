@@ -15,3 +15,21 @@ localStorage.setItem("lastname", "Smith");
 // Retrieve
 document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 
+
+
+// https://stackoverflow.com/questions/51305704/moment-js-if-statement-not-working-check-before-time
+
+function calTime(hour, mins) {
+    var format = "HH:mm";  
+    var bt = moment().add(hour,'h').add(mins, 'm');
+    if (bt.isAfter(moment('10:15', "HH:mm"))){
+       bt = bt.add(15, 'm');
+    }
+  
+     return bt.format(format);
+};
+
+//   https://www.w3schools.com/js/js_htmldom_css.asp
+
+
+

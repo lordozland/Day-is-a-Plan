@@ -356,7 +356,15 @@
 
     // Time is an Illusion of Color and Memory
 
-    
+    function calTime(hour, mins) {
+    var format = "HH:mm";  
+    var bt = moment().add(hour,'h').add(mins, 'm');
+    if (bt.isAfter(moment('10:15', "HH:mm"))){
+       bt = bt.add(15, 'm');
+    }
+  
+     return bt.format(format);
+    };
 
 
     
