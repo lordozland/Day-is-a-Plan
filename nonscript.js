@@ -32,4 +32,4 @@ function calTime(hour, mins) {
 //   https://www.w3schools.com/js/js_htmldom_css.asp
 
 
-
+document.getElementById(id).style.property = new style

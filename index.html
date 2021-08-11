@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Day is the Plan</title>
 </head>
-<body class="#c2185b pink darken-2"  onload="aimz9()">
+<body class="#c2185b pink darken-2" onload="aimz9()">
 
 <!-- Head -->
 
@@ -30,7 +30,7 @@
 
   <!-- 9 AM -->
 
-  <div class="container z-depth-5 off9">
+  <div class="container z-depth-5" id="off9">
     <div class="row">
       <div class="col s3 m3 l3 center" id="tim9">
         <div>9 am</div>
@@ -357,38 +357,57 @@
 
     // Time is an Illusion of Color and Memory
 
-    function aimz9(hour, mins) {
-      var format = "HH:mm";  
-      var bt = moment().format('LT');
-      if (bt.isAfter(moment('10:00', "LT"))){
-        document.getElementById('tim9').style.backgroundColor = "red"
-      }
+    // function aimz9(hour, mins) {
+    //   var format = "HH:mm";  
+    //   var bt = moment().format('LT');
+    //   if (bt.isAfter(moment('10:00', "LT"))){
+    //     document.getElementById('tim9').style.backgroundColor = "red"
+    //   }
 
-      console.log("red")
-    };
+    //   console.log("red")
+    // };
 
-    function calTime9(hour, mins) {
-    var format = "HH:mm";  
-    var bt = moment().format('LT');
-    if (bt.isAfter(moment('10:00', "LT"))){
-      document.getElementById('tim9').style.backgroundColor = "red"
-    }
+    // function calTime9(hour, mins) {
+    // var format = "HH:mm";  
+    // var bt = moment().format('LT');
+    // if (bt.isAfter(moment('10:00', "LT"))){
+    //   document.getElementById('tim9').style.backgroundColor = "red"
+    // }
 
-    console.log("red")
-    };
+    // console.log("red")
+    // };
+
+    
 
     function aimz9 () {
       var now9 = moment().format('LT');
-      var formOf9 = moment(["10AM"]);
+      var formOf9 = moment(10, 'HH');
 
-      if (now9 - formOf9 > 0) {
-        // document.getElementById('off9').style.backgroundColor = "#c2185b pink darken-2"
+      if (formOf9 < 0) {
+        document.getElementById('off9').style.background = "#90caf9";
         console.log("frog")
       } else {
-        // document.getElementById('off9').style.backgroundColor = "#90caf9 blue lighten-3"
+        document.getElementById('off9').style.background = "white";
         console.log("duck")
       }
 
+      console.log(formOf9)
+      console.log(now9)
+    }
+
+    function aimz10 () {
+      var now9 = moment().format('LT');
+      var formOf9 = moment(10, 'HH');
+
+      if (formOf9 < 0) {
+        document.getElementById('off9').style.background = "#90caf9";
+        console.log("frog")
+      } else {
+        document.getElementById('off9').style.background = "white";
+        console.log("duck")
+      }
+
+      console.log(formOf9)
       console.log(now9)
     }
 
