@@ -240,7 +240,8 @@
 
     // Open Time //
     document.getElementById("WTIIRN").innerHTML = moment().format('LLLL');
-    
+    var curTain = moment().format('LLLL');
+    console.log(curTain)
     
     // Vars //
     // var notegive = document.getElementById("notegive");
@@ -383,7 +384,7 @@
       var now9 = moment().format('LT');
       var formOf9 = moment(10, 'HH');
 
-      if (formOf9 < now9) {
+      if (formOf9 < 0) {
         document.getElementById('off9').style.background = "#90caf9";
         console.log("frog")
       } else {
@@ -394,6 +395,7 @@
       console.log(formOf9)
       console.log(now9)
     }
+    
 
     function aimz10 () {
       var now10 = moment().format('LT');
@@ -413,7 +415,7 @@
 
     function aimz11 () {
       var now11 = moment().format('LT');
-      var formOf11 = moment(11, 'HH');
+      var formOf11 = moment(12, 'HH');
 
       if (formOf11 < 0) {
         document.getElementById('off11').style.background = "#90caf9";
