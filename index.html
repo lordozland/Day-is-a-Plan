@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Day is the Plan</title>
 </head>
-<body class="#c2185b pink darken-2" onload="aimz9()">
+<body class="#c2185b pink darken-2" onload="aimz9(); aimz10(); aimz11();">
 
 <!-- Head -->
 
@@ -52,7 +52,7 @@
 
     <!-- 10 AM -->
 
-    <div class="container #90caf9 blue lighten-3 z-depth-5">
+    <div class="container" id="off10">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim10">
           <div>10 am</div>
@@ -74,7 +74,7 @@
 
     <!-- 11 AM -->
 
-    <div class="container #90caf9 blue lighten-3 z-depth-5">
+    <div class="container" id="off11">
       <div class="row">
         <div class="col s3 m3 l3 center" id="tim11">
           <div>11 am</div>
@@ -383,7 +383,7 @@
       var now9 = moment().format('LT');
       var formOf9 = moment(10, 'HH');
 
-      if (formOf9 < 0) {
+      if (formOf9 < now9) {
         document.getElementById('off9').style.background = "#90caf9";
         console.log("frog")
       } else {
@@ -396,19 +396,35 @@
     }
 
     function aimz10 () {
-      var now9 = moment().format('LT');
-      var formOf9 = moment(10, 'HH');
+      var now10 = moment().format('LT');
+      var formOf10 = moment(11, 'HH');
 
-      if (formOf9 < 0) {
-        document.getElementById('off9').style.background = "#90caf9";
-        console.log("frog")
+      if (formOf10 < 0) {
+        document.getElementById('off10').style.background = "#90caf9";
+        console.log("lizard")
       } else {
-        document.getElementById('off9').style.background = "white";
-        console.log("duck")
+        document.getElementById('off10').style.background = "white";
+        console.log('hawk')
       }
 
-      console.log(formOf9)
-      console.log(now9)
+      console.log(formOf10)
+      console.log(now10)
+    }
+
+    function aimz11 () {
+      var now11 = moment().format('LT');
+      var formOf11 = moment(11, 'HH');
+
+      if (formOf11 < 0) {
+        document.getElementById('off11').style.background = "#90caf9";
+        console.log("snake")
+      } else {
+        document.getElementById('off11').style.background = "white";
+        console.log('falcon')
+      }
+
+      console.log(formOf11)
+      console.log(now11)
     }
 
 
